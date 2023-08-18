@@ -5,6 +5,8 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Cursor;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
@@ -57,9 +59,53 @@ public class HelloApplication extends Application {
 			rect.setCursor(Cursor.H_RESIZE);
 			root.getChildren().addAll(rect,paneup,paneleft,panedown,paneright);
 
+        scene.setOnKeyPressed(event->{
+            if(event.getCode()== KeyCode.UP){
+                up.setFill(Color.GREEN);;
+                rect.setY(rect.getY()-10);
+            }
+            else if(event.getCode()==KeyCode.DOWN){
+                down.setFill(Color.GREEN);
+                rect.setY(rect.getY()+10);
+            }
 
+            else if(event.getCode()==KeyCode.LEFT) {
+                left.setFill(Color.GREEN);
+                rect.setX(rect.getX()-10);
+            }
 
+            else	if(event.getCode()==KeyCode.RIGHT){
+                right.setFill(Color.GREEN);
+                rect.setX(rect.getX()+10);
+            }
+        });
 
+        rect.setOnMouseDragged(event->{
+            rect.setX(event.getX());
+            rect.setY(event.getY());
+        });
+
+        rect.setOnMouseEntered(event->{
+            {
+                rect.setFill(Color.GREEN);
+            }
+        });
+        rect.setOnMouseExited(event->{
+            rect.setFill(Color.BLUE);
+        });
+
+        scene.addEventHandler(KeyEvent.KEY_RELEASED, event->{
+            if(event.getCode()==KeyCode.UP) {
+                up.setFill(Color.LIGHTGRAY);
+            }else if(event.getCode()==KeyCode.DOWN) {
+                down.setFill(Color.LIGHTGRAY);
+            }
+            if(event.getCode()==KeyCode.LEFT) {
+                left.setFill(Color.LIGHTGRAY);
+            }else if(event.getCode()==KeyCode.RIGHT) {
+                right.setFill(Color.LIGHTGRAY);
+            }
+        });
 
 			primaryStage.setScene(scene);
 			primaryStage.setResizable(false);

@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a6573bc-5518-48eb-8e7e-f233d43519c0" name="Changes" comment="initial">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9a6573bc-5518-48eb-8e7e-f233d43519c0" name="Changes" comment="Buttons und Rectangle">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eventseventhandlerundeventfilter/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eventseventhandlerundeventfilter/HelloApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1692395464482</updated>
       <workItem from="1692395465847" duration="222000" />
-      <workItem from="1692395876776" duration="1229000" />
+      <workItem from="1692395876776" duration="1714000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1692395617692</created>
@@ -79,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692395617692</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Buttons und Rectangle">
+      <created>1692397390020</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692397390020</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +93,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+    <MESSAGE value="Buttons und Rectangle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Buttons und Rectangle" />
   </component>
 </project>
